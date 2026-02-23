@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Shop</title>
+<link rel="stylesheet" href="AS6.css">
+</head>
+
+<body>
+
+<!-- THEME SWITCHER -->
+<input type="checkbox" id="theme-toggle">
+
+<header>
+    <div class="logo">Fashion Shop🎨</div>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#products">สินค้า</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <label for="theme-toggle" class="theme-btn">Day/Night</label>
+</header>
+
+
+<!-- SEARCH -->
+<div class="search-box">
+        <input type="text" id="searchInput" placeholder="ค้นหาสินค้า...">
+        <button id="searchBtn" class="search-btn">ค้นหา</button>
+</div>
+
+<!-- BANNER SLIDER -->
+<div class="slider" id="home">
+    <div class="slides">
+        <img src="https://i.pinimg.com/1200x/1d/26/4c/1d264c988391a6b743cfbd299b381170.jpg">
+        <img src="https://i.pinimg.com/1200x/db/0b/f6/db0bf6abc011c7a6621e7b8db6b18a1d.jpg">
+        <img src="https://i.pinimg.com/1200x/bf/8a/c8/bf8ac8f232dcaf91cce58599442afab3.jpg">
+    </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>สินค้าแฟชั่น</h2>
+
+    <div class="products">
+
+        <!-- แถวที่ 1 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/06/48/40/06484051aa06bb9bfa814e474ed08ff7.jpg">
+            <h3>sweet dress🍨</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/a3/96/54/a39654406cb456911c4762fe8511556e.jpg">
+            <h3>sawako style🍬</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/29/fa/d7/29fad760b4ef37e6d969b6dda73d0048.jpg">
+            <h3>everyday look💄</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/1a/69/09/1a69095f72cf6defa37104fcb29f20bf.jpg">
+            <h3>cute outfit🍫</h3>
+        </div>
+        <!-- แถวที่ 2 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b2/1f/73/b21f73c75cdcb1b230574ebadf34a483.jpg">
+            <h3>green🌱</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/dc/31/73/dc3173753ebad1231338f6a9ddf12046.jpg">
+            <h3>miku🍀</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/af/6f/23/af6f23a6ba86f084f8cf9f2e8824793b.jpg">
+            <h3>chinese outfit🐉</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/96/65/ce/9665cee8025581a41cf7ae1314dba737.jpg">
+            <h3>alt style🗝</h3>
+        </div>
+
+        <!-- แถวที่ 3 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/79/12/81/791281da9eb963646b2493ecdce36549.jpg">
+            <h3>blue💧</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b2/31/1c/b2311c3f630e9cefe9c10f05e2f3e583.jpg">
+            <h3>lolita style🩰</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/73/09/aa/7309aa3825c5906f47acaad932037caf.jpg">
+            <h3>red🍅</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/2b/6e/3f/2b6e3f5142ebcb0c98271ef094efd51e.jpg">
+            <h3>bear hat🧸</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h3>✨จัดทำโดย 68025649 Phophiang Temchotchaya✨</h3>
+
+    <div class="contact-center">
+        <p>สามารถติดต่อเราได้ผ่านช่องทางด้านล่าง</p>
+
+        <div class="social-icons">
+            <a href="https://line.me/ti/p/Cg5eiHBhDJ" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/960px-LINE_logo.svg.png" alt="Line">
+            </a>
+
+            <a href="https://www.facebook.com/share/17sFeEnecP/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/ym.pp_tr?igsh=MWhvYjk2aHdjZmo1bg==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ปุ่ม Back to Top -->
+<button id="backToTop" class="back-to-top">↑</button>
+
+<!-- Script -->
+<script>
+    // ปุ่ม Back to Top (ส่วนเดิม)
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) { 
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    });
+
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+
+
+    /* 🔍 SEARCH PRODUCT */
+    const searchBtn = document.getElementById("searchBtn");
+    const searchInput = document.getElementById("searchInput");
+
+    searchBtn.addEventListener("click", function () {
+
+        const keyword = searchInput.value.toLowerCase().trim();
+        const products = document.querySelectorAll(".card");
+
+        products.forEach(product => {
+            const name = product.querySelector("h3").textContent.toLowerCase();
+
+            if (name.includes(keyword)) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
