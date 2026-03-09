@@ -1,0 +1,7 @@
+  <div class="banner">
+    <div class="text-center">
+      <h1>ยินดีต้อนรับสู่ ICT22567</h1>
+      <p class="fs-4">เว็บไซต์เรียนรู้เทคโนโลยีและนวัตกรรม</p>
+      <a href="#" class="btn btn-light btn-lg mt-3">เริ่มต้นใช้งาน</a>
+    </div>
+  </div>

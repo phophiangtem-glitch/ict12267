@@ -1,0 +1,15 @@
+.banner {
+      background-image: url('https://cdn.pixabay.com/photo/2025/10/02/09/24/snail-9868046_1280.jpg'); /* เปลี่ยนเป็นรูปของคุณได้ */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    .banner h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
