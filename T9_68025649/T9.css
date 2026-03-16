@@ -1,0 +1,164 @@
+/* FONT + BACKGROUND --------------------------------------------------*/
+body {
+    font-family: 'Prompt', sans-serif;
+    background: linear-gradient(180deg, #F2F8FF 0%, #FDE7F2 100%);
+    color: #555;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* COLOR VARIABLES ----------------------------------------------------*/
+:root {
+    --pink: #F9C9E0;
+    --pink-light: #FFE6F2;
+    --blue: #B7DBFF;
+    --blue-light: #E8F3FF;
+    --white: #FFFFFF;
+    --shadow-soft: 0 8px 22px rgba(180,180,255,0.25);
+    --shadow-glow: 0 0 18px rgba(255,180,220,0.8);
+}
+
+/* NAVBAR -------------------------------------------------------------*/
+.pastel-nav {
+    background: linear-gradient(to right, var(--blue), var(--pink));
+    box-shadow: var(--shadow-soft);
+}
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.nav-link:hover {
+    color: #ffe3f7 !important;
+    transform: translateY(-2px);
+}
+
+/* BANNER --------------------------------------------------------------*/
+.banner {
+    background: url('https://i.pinimg.com/1200x/07/9e/cd/079ecd13d7b71bbec643e95040a639fa.jpg') center/cover;
+    height: 60vh;
+    border-radius: 25px;
+    margin: 25px;
+    display: flex;
+    align-items: flex-end;
+    padding: 45px;
+    color: white;
+    text-shadow: 0 0 18px rgba(0,0,0,0.8);
+    box-shadow: var(--shadow-soft);
+    animation: fadeUp 1.2s ease;
+}
+
+.banner-text {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* CARD ---------------------------------------------------------------*/
+.movie-card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-glow);
+}
+
+/* ปรับให้ทุกการ์ดเป็นอัตราส่วนโปสเตอร์หนังมาตรฐาน */
+.a4-card {
+    aspect-ratio: 2 / 3;      /* อัตราส่วนโปสเตอร์ 2:3 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ปรับรูปในโปสเตอร์ให้ครอบพอดี */
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* ครอบเต็มแบบโปสเตอร์จริง */
+    border-radius: 12px;
+}
+
+/* CARD TITLE */
+.movie-card h5 {
+    text-align: center;
+    margin-top: 12px;
+    color: #6A7EFF;
+    font-weight: 600;
+}
+
+/* SECTION TITLE ------------------------------------------------------*/
+.section-title {
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #6AA7FF;
+    text-shadow: 0 0 8px rgba(180,200,255,0.5);
+}
+
+/* BUTTON --------------------------------------------------------------*/
+.pastel-btn {
+    background: linear-gradient(135deg, var(--pink), var(--blue));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s;
+}
+.pastel-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--pink-light), var(--blue-light));
+    color: #333;
+}
+
+/* ABOUT & CONTACT ----------------------------------------------------*/
+.content-box {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* FOOTER -------------------------------------------------------------*/
+.pastel-footer {
+    background: linear-gradient(90deg, var(--blue), var(--pink));
+    color: white;
+    text-align: center;
+    padding: 27px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.pastel-footer a {
+    color: white;
+    margin: 0 12px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.pastel-footer a:hover {
+    transform: scale(1.2);
+}
+
+/* ANIMATIONS ----------------------------------------------------------*/
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
